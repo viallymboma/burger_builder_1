@@ -1,0 +1,87 @@
+.Button {
+
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+
+    &:first-of-type {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .NavigationItem {
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        a {
+            color: white;
+            text-decoration: none;
+            height: 100%;
+            padding: 16px 10px;
+            border-bottom: 4px solid transparent;
+            box-sizing: border-box;
+            display: block;
+
+            &:hover, &:active, .active {
+                background-color: #8F5C2C;
+                border-bottom: 4px solid #40A4C8;
+                color: white;
+            }
+
+        }
+        .active {
+            background-color: #8F5C2C;
+            border-bottom: 4px solid #40A4C8;
+            color: white;
+        }
+    }
+}
+
+
+.Logo {
+    background-color: white;
+    padding: 8px;
+    height: 70%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    img {
+        height: 100%;
+    }
+}
+
+.Success {
+    color: #5c9210;
+}
+
+.Danger {
+    color: red;
+}
+
+
+.Backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
